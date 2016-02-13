@@ -1,0 +1,18 @@
+{
+	"name": "Keys to Success",
+	"description": "This extension replaces all instances of the word key with a key symbol.",
+	"version": "1.0",
+	"icons": {"64": "key.png"
+	},
+
+	"permissions": [
+		"activeTab"
+	],
+	"content_scripts": [{
+		"matches": ["http://*/*"],
+		"js": ["myscript.js"],
+		"run_at": "document_end"
+	}],
+	"manifest_version": 2
+}
+
